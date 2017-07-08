@@ -1,0 +1,30 @@
+{
+	"name":"Powersleep Registration Management",
+	"url":"https://vmiis.github.io/modules/panels/panel.2.html",
+	"parameters":{
+	},
+	"panel":
+	{
+		"columns":
+		[
+			{
+				"sections":
+				[
+					{
+						"name":"Modules",
+						"modules":
+						[
+							{
+								"module_id":"registration",
+								"name":"Registration Records",
+								"table_id":"20010814",
+								"url":"https://woolcock-imr.github.io/modules/powersleep-registration-management/registration-records.html",
+								"counting":"1"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}
