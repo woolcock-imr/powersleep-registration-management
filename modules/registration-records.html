@@ -4,10 +4,10 @@
 <script>
     function F__ID(){
         //-------------------------------------
-        VmInclude:__PARTS__/grid/grid.2.js
+        VmInclude:__PARTS__/grid/grid.js
         VmInclude:__PARTS__/style/ease-in-out.2.js
         //-------------------------------------
-        var fields="First_Name,Last_Name,Mobile,Email";
+        var fields="First_Name,Last_Name,Phone_Number,Email,Postcode,Study_find";
         _fields="_Form,"+fields+",Submit Date|DateTime,Submitted by|Author,_Delete";
         //-------------------------------------
         $('#D__ID').on('load',function(){  _set_req(); _request_data(); })
