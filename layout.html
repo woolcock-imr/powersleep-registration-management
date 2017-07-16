@@ -1,7 +1,5 @@
 <div name=layout>
-    <div name=slider>
-        <div id="slider__ID" style="background: url(https://rt.woolcock.org.au/github/woolcock-imr/woolcock_images/bk2.jpg) no-repeat bottom center; background-size:cover"></div>
-    </div>
+	<div id="slider__ID"></div>
     <header id=header__ID>
 		<div id=right_corner__ID>
 			<span id=database_p__ID><span style='color:green'>&#11044; </span>Connected to production database<br></span>
@@ -40,7 +38,8 @@ function F__ID(){
 	if( $('#slider__ID').length!==0 ){
 	    var slideWidth=window.innerWidth;
 	    var slideHeight=window.innerHeight;
-	    $('#slider__ID').css({ width: slideWidth, height: slideHeight });
+		var bk="url("+$vm.hosting_path+"/images/background.jpg) no-repeat bottom center";
+	    $('#slider__ID').css({ width: slideWidth, height: slideHeight, background:bk, 'background-size':'cover' });
 	}
 	//------------------------------------
 	var on_load=function(){
