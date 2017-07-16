@@ -13,7 +13,7 @@ $(document).ready(function(){
 	var start=function(){
 		$vm.trust_path=['https://vmiis.github.io','https://raw.githubusercontent.com/vmiis','https://woolcock-imr.github.io','https://wappsystem.github.io','https://cbs.wappsystem.com','https://rt.woolcock.org.au','https://codepen.io/vmiis'];
 		$vm.reload='';
-		if(window.location.toString().indexOf('reload=1')!=-1){
+		if(window.location.toString().indexOf('_d=3')!=-1){
 			$vm.reload=new Date().getTime().toString();
 		}
 		var url=$vm.hosting_path+'/version.html?_='+new Date().getTime().toString();
@@ -125,14 +125,14 @@ $(document).ready(function(){
 			text=text.replace('http://127.0.0.1:8000/vmiis/parts','https://vmiis.github.io/parts');
 			text=text.replace('http://127.0.0.1:8000/vmiis/modules','https://vmiis.github.io/modules');
 		}
-		if(window.location.toString().indexOf('d=1')!=-1){
+		if(window.location.toString().indexOf('_d=1')!=-1){
 			//use local system files
 			text=text.replace('https://vmiis.github.io/api','http://127.0.0.1:8000/vmiis/api');
 			text=text.replace('https://vmiis.github.io/framework','http://127.0.0.1:8000/vmiis/framework');
 			text=text.replace('https://vmiis.github.io/parts','http://127.0.0.1:8000/vmiis/parts');
 			text=text.replace('https://vmiis.github.io/modules','http://127.0.0.1:8000/vmiis/modules');
 		}
-		if(window.location.toString().indexOf('d=2')!=-1){
+		if(window.location.toString().indexOf('_d=2')!=-1){
 			//use latest unstable version (master branch, not gh-pages branch)
 			text=text.replace('https://vmiis.github.io/api','https://raw.githubusercontent.com/vmiis/api/master');
 			text=text.replace('https://vmiis.github.io/framework','https://raw.githubusercontent.com/vmiis/framework/master');
